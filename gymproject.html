@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(gyms.jpg);
+        background-repeat: no-repeat;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid reD; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 39%;
+        margin: 50px auto;
+        /* border: 2px solid blue; */
+    }
+
+    .navbar li a:hover {
+        text-decoration: wavy;
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        right: 34px;
+        top: 50px;
+
+    }
+
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover .navbar li a.active {
+        text-decoration: underline;
+
+    }
+
+    .left img {
+        width: 50px;
+        /* filter: invert(50%); */
+        padding: 5px 25px;
+    }
+
+    .left div {
+        text-align: center;
+        color: wheat;
+        line-height: 19px;
+        font-size: 20px;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid green;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: peru;
+
+    }
+
+    .container {
+        border: 4px solid cadetblue;
+        margin: 150px 450px;
+        padding: 20px 30px;
+        width: 33%;
+        border-radius: 33px;
+        color: wheat;
+        cursor: pointer;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 450PX;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Screenshot_12-7-2024_7249_www.google.com.jpeg" alt="">
+            <div>APNA GYM</div>
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">fitness </a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">cal us</button>
+            <button class="btn">email us</button>
+
+        </div>
+    </header>
+    <DIV class="container">
+        <h1>apna gym me ao or klam karo</h1>
+        <form action="nocation.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="put our name" id="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="put our age" id="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="put our gender" id="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="put our location" id="">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+
+    </DIV>
+
+</body>
+
+</html>
